@@ -28,6 +28,8 @@ class Rubric(models.Model):
 
     )
 
+
+
     def __str__(self):
          return f'{self.name}'
 
@@ -59,6 +61,12 @@ class Bb(models.Model):
         ('s', 'Продам'),
         ('c', 'Обменяю'),
     )
+
+    new_file = models.CharField(
+         max_length=50,
+         null=True,
+         blank=True,
+     )
 
     # KINDS = (
     #     ('Купля-продажа', (
@@ -94,6 +102,7 @@ class Bb(models.Model):
         blank=True,
         verbose_name='Описание',
     )
+
 
     # price = models.FloatField(
     #     null=True,
@@ -140,3 +149,5 @@ class Bb(models.Model):
         unique_together = ('title', 'published')
         verbose_name = 'Объявление'
         verbose_name_plural = 'Объявления'
+
+

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bboard',  # 'bboard.apps.BboardConfig',
+    'domashka'
 ]
 
 MIDDLEWARE = [
