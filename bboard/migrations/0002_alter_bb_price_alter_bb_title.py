@@ -20,6 +20,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='bb',
             name='title',
-            field=models.CharField(error_messages={'invalid': 'введите 4 и более символов'}, max_length=50, validators=[django.core.validators.RegexValidator(regex='^.{4,}$')], verbose_name='Товар'),
+            field=models.CharField(error_messages={'invalid': 'Введите 4 и более символа'}, max_length=50, validators=[django.core.validators.RegexValidator(regex='^.{4,}$')], verbose_name='Товар'),
         ),
     ]
