@@ -1,3 +1,4 @@
-from django.shortcuts import render
 
-# Create your views here.
+def delete_comment(request, sms_id):
+
+
